@@ -1,11 +1,36 @@
 <p>practicas works!</p>
 
-<span>1.- Mostrar un texto en pantalla</span>
+<span>1.- Mostrar un texto en pantalla:</span>
 <br>
 {{texto}}
-<br>
+<br><br>
 
-<span>2.- Mostrar Texto</span>
+<span>2.- Mostrar Texto Concatenado:</span>
 <br>
 {{nombrecompleto}}
+<br><br>
+
+<span>3.- Suma y mostrar el resultado</span>
 <br>
+La Suma de {{numero1}} + {{numero2}} es {{resultado}}
+<br><br>
+
+<span>4.- Multiplica y mostrar el resultado</span>
+<br>
+La multiplicacion de {{numero1}} + {{numero2}} es {{resultado2}}
+<br><br>
+
+<span>4.- Multiplica y mostrar el resultado</span>
+<br>
+La multiplicacion de {{numero1}} + {{numero2}} es {{resultado2}}
+<br><br>
+
+<label>Inreoduce el primer numero</label>
+<input type="number" [(ngModel)]="valor1">
+<br>
+<label>Introduce el segundo numero</label>
+<input type="number" [(ngModel)]="valor2">
+<br>
+<button (click)="calcular()">calcular</button>
+<br>
+<label>La suma de los 2 numeros es:</label> {{resultado3}}
